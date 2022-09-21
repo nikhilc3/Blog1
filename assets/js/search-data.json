@@ -36,7 +36,7 @@
     
         ,"post3": {
             "title": "First Python project",
-            "content": "print(&quot;Hi this is my blog&quot;) . Hi this is my blog .",
+            "content": "print(&quot;Hi this is my blog&quot;) print(&quot;hi&quot;) . Hi this is my blog .",
             "url": "https://nikhilc3.github.io/Blog1/Notebooks/firstpython",
             "relUrl": "/Notebooks/firstpython",
             "date": " • Aug 25, 2022"
