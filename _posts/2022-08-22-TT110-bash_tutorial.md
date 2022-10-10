@@ -2,6 +2,7 @@
 keywords: fastai
 title: Bash Tutorial
 toc: true
+badges: true
 comments: true
 permalink: /_notebooks/firstbash
 categories: [_notebooks]
