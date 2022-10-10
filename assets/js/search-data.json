@@ -150,7 +150,7 @@
   
       ,"page2": {
           "title": "Submenu",
-          "content": "Contact Country . .",
+          "content": "This is my API Contact Country . .",
           "url": "https://nikhilc3.github.io/Blog1/submenu/",
           "relUrl": "/submenu/",
           "date": ""
