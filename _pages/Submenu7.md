@@ -16,7 +16,7 @@ table, th, td {
 
 <table style="width:100%">
   <tr>
-    <th><a href="https://nikhilc3.github.io/Blog1/_notebooks/2022/10/09/APHACKS.html"></a></th>
+    <th><a href="https://nikhilc3.github.io/Blog1/_notebooks/2022/10/09/APHACKS.html">This is my API</a></th>
     <th>Contact</th>
     <th>Country</th>
   </tr>
