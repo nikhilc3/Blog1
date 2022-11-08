@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale="1.0">
+    <title>World Statistics</title>
+</head>
+<body>
+    <div>
+        <h1>Worldometer</h1>
+        <br><br>
+        <table>
+            <tr>
+                <th>Total Cases</th>
+                <th>Total Deaths</th>
+                <th>Total Recovered</th>
+            </tr>
+            <tbody>
+                <tr id="data">
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+    init()
+    var data =''
+    function init(){
+        var url ="https://api.covid19api.com/summary"
+       
+        $.get(url,function(data){
+            console.log(data.Global)
+
+            data=`
+            <td>${data.Global.TotalConfirmed}</td>
+            <td>${data.Global.TotalDeaths}</td>
+            <td>${data.Global.TotalRecovered}</td>
+            `
+            $("#data").html(data)
+        })
+    }
+
+
+
+
+
+
+
+
+</script>
+
+</html>
