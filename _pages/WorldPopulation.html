@@ -1,3 +1,9 @@
+layout: JSWorld
+title: JSWOrld
+permalink: /JSWorld/
+---
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,18 +27,22 @@
             </tbody>
         </table>
     </div>
+
+    
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
 
-    init()
+<script>
+    //Calls the init function every 1 sec that pulls data from API to refresh on page
+    setInterval(init,1000)
     var data =''
     function init(){
-        var url ="https://api.covid19api.com/summary"
+        //API to get pull data
+        var url =""
        
         $.get(url,function(data){
             console.log(data.Global)
-
+            //Populate the url data in to table row
             data=`
             <td>${data.Global.TotalConfirmed}</td>
             <td>${data.Global.TotalDeaths}</td>
@@ -40,15 +50,12 @@
             `
             $("#data").html(data)
         })
+        
     }
 
-
-
-
-
-
-
-
+  
+    
 </script>
+
 
 </html>
