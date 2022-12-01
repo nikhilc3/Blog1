@@ -120,7 +120,7 @@ tags: [html, liquid, javascript]
         image.src = IMAGE_OFF;
         butt.innerHTML = MSG_ON;
         } else {
-        dig.value = 2**(BITS-i-1);
+        dig.value = 1;
         image.src = IMAGE_ON;
         butt.innerHTML = MSG_OFF;
         }
