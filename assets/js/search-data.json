@@ -13,10 +13,10 @@
   
     
         ,"post1": {
-            "title": "PYTHON sports API",
-            "content": "import requests url = &quot;https://flashlive-sports.p.rapidapi.com/v1/search/multi-search&quot; querystring = {&quot;query&quot;:&quot;mess&quot;,&quot;locale&quot;:&quot;en_INT&quot;} headers = { &quot;X-RapidAPI-Key&quot;: &quot;6cf0c105b2mshabcf75f48cea6f9p14945ajsn30b6ebcd6ead&quot;, &quot;X-RapidAPI-Host&quot;: &quot;flashlive-sports.p.rapidapi.com&quot; } response = requests.request(&quot;GET&quot;, url, headers=headers, params=querystring) # print(response.json()) for team in response.json(): print(team[&#39;TITLE&#39;]) print() . Messi Lionel (Paris SG) Messias Junior (AC Milan) Messaoudi Billel (Kortrijk) TSG Messel El Messaoudi Ahmed (FC Emmen) Messi Ahmed Adel (Al Ittihad Alexandria) Messoussa Amine ACR Messina Toudji Messan Manoel (Fluminense) Messerer Christoph (St. Polten) Messias (Ceara) Messai Mahmoud (Ben Guerdane) Messadi Houssine (Stade Tunisien) Messi (Botev Vratsa) Messibah Zakaria (Constantine) Messens Hugo (Sete) Merbah Messala (USM Alger) Leandro Messias (Stal Mielec) Messiba Jeremy (Lucon) .",
-            "url": "https://nikhilc3.github.io/Blog1/_notebooks/2022/12/15/APHACKS.html",
-            "relUrl": "/_notebooks/2022/12/15/APHACKS.html",
+            "title": "Title",
+            "content": ". title: Binary Math layout: default description: A Binary Math illustrative application using HTML, Liquid, and JavaScript. permalink: /frontend/binary image: /images/binary.png categories: [3.B, 3.C, C4.4] tags: [html, liquid, javascript] week: 13 . type: pbl . import requests url = &quot;https://flashlive-sports.p.rapidapi.com/v1/search/multi-search&quot; querystring = {&quot;query&quot;:&quot;mess&quot;,&quot;locale&quot;:&quot;en_INT&quot;} headers = { &quot;X-RapidAPI-Key&quot;: &quot;6cf0c105b2mshabcf75f48cea6f9p14945ajsn30b6ebcd6ead&quot;, &quot;X-RapidAPI-Host&quot;: &quot;flashlive-sports.p.rapidapi.com&quot; } response = requests.request(&quot;GET&quot;, url, headers=headers, params=querystring) # print(response.json()) for team in response.json(): print(team[&#39;TITLE&#39;]) print() . Messi Lionel (Paris SG) Messias Junior (AC Milan) Messaoudi Billel (Kortrijk) TSG Messel El Messaoudi Ahmed (FC Emmen) Messi Ahmed Adel (Al Ittihad Alexandria) Messoussa Amine ACR Messina Toudji Messan Manoel (Fluminense) Messerer Christoph (St. Polten) Messias (Ceara) Messai Mahmoud (Ben Guerdane) Messadi Houssine (Stade Tunisien) Messi (Botev Vratsa) Messibah Zakaria (Constantine) Messens Hugo (Sete) Merbah Messala (USM Alger) Leandro Messias (Stal Mielec) Messiba Jeremy (Lucon) .",
+            "url": "https://nikhilc3.github.io/Blog1/2022/12/15/APHACKS.html",
+            "relUrl": "/2022/12/15/APHACKS.html",
             "date": " • Dec 15, 2022"
         }
         
