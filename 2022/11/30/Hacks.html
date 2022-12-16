@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      12 min read
     
 </span></p>
 
@@ -129,6 +129,12 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Hacks-2">Hacks 2 </a></li>
 <li class="toc-entry toc-h2"><a href="#Crossword-Puzzle">Crossword Puzzle </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks-5-6">Hacks 5-6 </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks-section-9-11">Hacks section 9-11 </a></li>
+<li class="toc-entry toc-h2"><a href="#Notes">Notes </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks-for-3.9.3">Hacks for 3.9.3 </a></li>
+<li class="toc-entry toc-h2"><a href="#Lesson-12-13-hacks">Lesson 12-13 hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks-2">Hacks 2 </a></li>
+<li class="toc-entry toc-h2"><a href="#3.13-Hacks">3.13 Hacks </a></li>
 </ul>
 </li>
 </ul><!--
@@ -502,14 +508,6 @@ nikhilchakravarthula you scored 3/3
 <p>Down: 1) iteration 2) selection</p>
 <p>Across: 3) sequence</p>
 
-<figure>
-  
-    <img class="docimage" src="https://user-images.githubusercontent.com/111464993/205387104-98b81afd-136e-4dde-a1a4-b57c32b2a242.png" alt="">
-    
-    
-</figure>
-
-
 </div>
 </div>
 </div>
@@ -574,6 +572,8 @@ nikhilchakravarthula you scored 3/3
 <span class="n">Coins</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="k">if</span> <span class="n">USD</span> <span class="o">&gt;=</span> <span class="mi">9</span> <span class="ow">and</span> <span class="n">Coins</span> <span class="o">&gt;=</span> <span class="mi">100</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"You have a lot of money"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"you have less money"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -680,6 +680,593 @@ nikhilchakravarthula you scored 3/3
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks-section-9-11">
+<a class="anchor" href="#Hacks-section-9-11" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks section 9-11<a class="anchor-link" href="#Hacks-section-9-11"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Notes">
+<a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
+</h2>
+<p>First, create algorithms.</p>
+<p>Outlining an algorithm's procedure before coding is a smart idea. This guarantees that it is correctly sequenced. You should use a flowchart or simple language to represent the algorithm. You can use visualization to more clearly observe how the entire algorithm works. This might make the coding process more productive and efficient.</p>
+<p>2) Evaluation of Iteration and Selection</p>
+<p>Iterative algorithms repeat a function until a target is reached. We can use iteration to more simply represent an algorithm without illustrating all the repeated steps. Algorithms with selection only execute specific functions in the case of certain conditions being true or false.</p>
+<p>3) Why are algorithms used?</p>
+<p>It is simple to think that two algorithms that look quite similar do the same task. That is not the case, though, because we have learned to detect minute variations in code and essentially debug.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">isCold</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">isHot</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="k">if</span> <span class="n">isCold</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">" Jacket necessary!"</span><span class="p">)</span>
+
+<span class="k">elif</span> <span class="n">isHot</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"No Jacket necessary!"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre> Jacket necessary!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">isCold</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">isHot</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">puddles</span> <span class="o">=</span> <span class="ow">not</span><span class="p">(</span><span class="n">isCold</span><span class="p">)</span> <span class="ow">and</span> <span class="n">isHot</span>
+<span class="k">if</span> <span class="n">isHot</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"No Jacket!"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">isCold</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Jacket!"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>1) When the code first runs, there are 5 coins available.</p>
+<p>2) The AmountMoney variable is set to True.</p>
+<p>3) $1 is subtracted from the coins variable but AmountMoney stays true.</p>
+<p>4) The string "Broke!" is printed when the variable coins reaches a value of 0. At that point, AmountMoney is set to False.</p>
+<p>5) End!</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Coins</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">AmountMoney</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="k">while</span><span class="p">(</span><span class="n">AmountMoney</span> <span class="o">==</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="n">Coins</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">Coins</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">AmountMoney</span> <span class="o">==</span> <span class="kc">False</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Broke"</span><span class="p">)</span>
+    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Broke
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/nikhilchakravarthula/vscode/Blog1/_notebooks/2022-11-30-Hacks.ipynb Cell 24</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/nikhilchakravarthula/vscode/Blog1/_notebooks/2022-11-30-Hacks.ipynb#X34sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> Coins = 10
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/nikhilchakravarthula/vscode/Blog1/_notebooks/2022-11-30-Hacks.ipynb#X34sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> AmountMoney = True
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/nikhilchakravarthula/vscode/Blog1/_notebooks/2022-11-30-Hacks.ipynb#X34sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> while(AmountMoney == True):
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/nikhilchakravarthula/vscode/Blog1/_notebooks/2022-11-30-Hacks.ipynb#X34sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     Coins -= 1
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/nikhilchakravarthula/vscode/Blog1/_notebooks/2022-11-30-Hacks.ipynb#X34sZmlsZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     if Coins == 0:
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks-for-3.9.3">
+<a class="anchor" href="#Hacks-for-3.9.3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks for 3.9.3<a class="anchor-link" href="#Hacks-for-3.9.3"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">num_guesses</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">user_guess</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">upper_bound</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">lower_bound</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I'm thinking of a number between 0 and 100."</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">guess</span><span class="p">():</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Input your guess"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">num</span> 
+
+<span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">guess</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Too low, try again!!!!"</span><span class="p">)</span> 
+        <span class="n">lower_bound</span> <span class="o">=</span> <span class="n">guess</span>
+        <span class="k">return</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
+    <span class="k">elif</span> <span class="nb">int</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Too high, try again!!!!! "</span><span class="p">)</span> 
+        <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">guess</span>
+        <span class="k">return</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">upper_bound</span><span class="p">,</span> <span class="n">lower_bound</span> <span class="o">=</span> <span class="n">guess</span><span class="p">,</span> <span class="n">guess</span>
+        <span class="k">return</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span> 
+
+<span class="k">while</span> <span class="n">user_guess</span> <span class="o">!=</span> <span class="n">number</span><span class="p">:</span>
+    <span class="n">user_guess</span> <span class="o">=</span> <span class="n">guess</span><span class="p">()</span>
+    <span class="n">num_guesses</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You guessed </span><span class="si">{</span><span class="n">user_guess</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+    <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">search</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">user_guess</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">upper_bound</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+        <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Guess a number between </span><span class="si">{</span><span class="n">lower_bound</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">upper_bound</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You guessed the number in </span><span class="si">{</span><span class="n">num_guesses</span><span class="si">}</span><span class="s2"> guesses!"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>I'm thinking of a number between 0 and 100.
+You guessed 30.
+Too low, try again!!!!
+Guess a number between 30 and 100.
+You guessed 72.
+Too low, try again!!!!
+Guess a number between 72 and 100.
+You guessed 91.
+Too high, try again!!!!! 
+Guess a number between 72 and 91.
+You guessed 83.
+Too high, try again!!!!! 
+Guess a number between 72 and 83.
+You guessed 75.
+Too high, try again!!!!! 
+Guess a number between 72 and 75.
+You guessed 73.
+Too low, try again!!!!
+Guess a number between 73 and 75.
+You guessed 74.
+You guessed the number in 7 guesses!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Answer is in image below</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Answer: Set 1: 80, Set 2: 74, Set 3: 96</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Answer is C</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numListOne</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">44</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">79</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">99</span><span class="p">]</span>
+<span class="n">numListTwo</span> <span class="o">=</span> <span class="p">[</span><span class="mi">92</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span><span class="mi">66</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">numListThree</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">96</span><span class="p">,</span><span class="mi">111</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">84</span><span class="p">,</span><span class="mi">60</span><span class="p">]</span>
+<span class="n">numLists</span> <span class="o">=</span> <span class="p">[</span><span class="n">numListOne</span><span class="p">,</span> <span class="n">numListTwo</span><span class="p">,</span> <span class="n">numListThree</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numLists</span><span class="p">)):</span>
+    <span class="n">numLists</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">middle</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numLists</span><span class="p">[</span><span class="n">x</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Middle Index of List #"</span><span class="p">,</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s2">"is"</span><span class="p">,</span><span class="n">numLists</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">middle</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Middle Index of List # 1 is 57
+Middle Index of List # 2 is 43
+Middle Index of List # 3 is 60
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Lesson-12-13-hacks">
+<a class="anchor" href="#Lesson-12-13-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lesson 12-13 hacks<a class="anchor-link" href="#Lesson-12-13-hacks"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>a) Procedure: A block of code that is created to perform a given task - essentially a function.</p>
+<p>b) Parameter: A variable that is utilized in a function that enables data to be imported into said function.</p>
+<p>a) A return value is a value that a function or method returns to the caller code once it has completed executing. Once the function or method has completed its task, the value is returned to the caller code.</p>
+<p>b) Output parameters, which are variables supplied by reference to a function or method and used to return a value to the caller code, are another type of parameter. They are frequently used to have a single function or method return a number of values.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">userNum</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+
+<span class="k">def</span> <span class="nf">sqrt</span><span class="p">(</span><span class="n">userNum</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">userNum</span>
+
+<span class="n">sqrt</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">userNum</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Square root of"</span><span class="p">,</span> <span class="n">userNum</span> <span class="p">,</span> <span class="s2">":"</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">sqrt</span><span class="p">))</span>  
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Square root of 10.0 : 3.1622776601683795
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks-2">
+<a class="anchor" href="#Hacks-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks 2<a class="anchor-link" href="#Hacks-2"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="c1"># Set function</span>
+<span class="k">def</span> <span class="nf">addition</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+    <span class="k">return</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+
+<span class="c1">#Print the result</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">addition</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>120
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">split_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="c1"># use the split() method to split the string into a list of words</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>
+
+	<span class="c1"># initialize a new list to hold all non-empty strings</span>
+    <span class="n">new_words</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">word</span> <span class="o">!=</span> <span class="s2">""</span><span class="p">:</span>
+            <span class="c1"># add all non-empty substrings of `words` to `new_words`</span>
+            <span class="n">new_words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">words</span>
+
+<span class="c1"># this function takes a list of words as input and returns the number of words</span>
+<span class="c1"># that start with the given letter (case-insensitive)</span>
+<span class="k">def</span> <span class="nf">count_words_starting_with_letter</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">letter</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="c1"># loop through the list of words and check if each word starts with the given letter</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="c1"># use the lower() method to make the comparison case-insensitive</span>
+        <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">letter</span><span class="p">):</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="c1"># this function takes a string as input and returns the number of words that start with 'a'</span>
+<span class="k">def</span> <span class="nf">count_words_starting_with_a_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="c1"># use the split_string() function to split the input string into a list of words</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">split_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    
+    <span class="c1"># use the count_words_starting_with_letter() function to count the number of words</span>
+    <span class="c1"># that start with 'a' in the list of words</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count_words_starting_with_letter</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="s2">"a"</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="c1"># see above</span>
+<span class="k">def</span> <span class="nf">count_words_starting_with_d_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">split_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count_words_starting_with_letter</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="s2">"d"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="c1"># example usage:</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">"   This is  a  test  string! Don't you think this is cool? "</span>
+<span class="n">a_count</span> <span class="o">=</span> <span class="n">count_words_starting_with_a_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">d_count</span> <span class="o">=</span> <span class="n">count_words_starting_with_d_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Words starting with a:"</span><span class="p">,</span> <span class="n">a_count</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Words starting with d:"</span><span class="p">,</span> <span class="n">d_count</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Words starting with a: 1
+Words starting with d: 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.13-Hacks">
+<a class="anchor" href="#3.13-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.13 Hacks<a class="anchor-link" href="#3.13-Hacks"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p></p>
+<p>x = 1 y = 2</p>
+<p>&lt;button id= “add” type=“button” onclick=“addition(x,y)“&gt;addition&lt;/button&gt;</p>
+<p>&lt;p id = “output”&gt;</p>&lt;/p&gt;
+<p>&lt;button id= “subtract” type=“button” onclick=“subtraction(x,y)“&gt;subtraction&lt;/button&gt;</p>
+<p>&lt;p id = “output2”&gt;</p>&lt;/p&gt;
+<p>&lt;button id= “divide” type=“button” onclick=“divide(x,y)“&gt;divide&lt;/button&gt;</p>
+<p>&lt;p id = “output3”&gt;</p>&lt;/p&gt;
+<p>&lt;button id= “multiply” type=“button” onclick=“multiply(x,y)“&gt;multiply&lt;/button&gt;</p>
+<p>&lt;p id = “output4”&gt;</p>&lt;/p&gt;
+<script>
+  var x = 1
+  var y = 2
+  function addition(x,y) {
+    document.getElementById(“output”).innerHTML = x + y
+    }
+  function subtraction(x,y) {
+    document.getElementById(“output2”).innerHTML = x - y
+    }
+  function divide(x,y) {
+    document.getElementById(“output3").innerHTML = x/y 
+    }
+  function multiply(x,y) {
+    document.getElementById(“output4”).innerHTML = x * y
+    }
+</script>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p></p>
+<p id="input">Enter First Number: <input id="one">
+<br><br>
+Enter Second Number: <input id="two"></p>
+<p></p>
+<p><button onclick="fun()">Add, Subtract, Multiply, Divide</button></p>
+<p></p>
+<p id="res" style="display:none;">
+Addition Result = <input id="add"><br><br>
+Subtraction Result = <input id="subtract"><br><br>
+Multiplication Result = <input id="multiply"><br><br>
+Division Result = <input id="divide"></p>
+<script>
+var numOne, numTwo, res, temp;
+function fun()
+{
+  numOne = parseInt(document.getElementById("one").value);
+  numTwo = parseInt(document.getElementById("two").value);
+  if(numOne && numTwo)
+  {
+    temp = document.getElementById("res");
+    temp.style.display = "block";
+    res = numOne + numTwo;
+    document.getElementById("add").value = res;
+    res = numOne - numTwo;
+    document.getElementById("subtract").value = res;
+    res = numOne * numTwo;
+    document.getElementById("multiply").value = res;
+    res = numOne / numTwo;
+    document.getElementById("divide").value = res;
+  }
+}
+</script>
+</div>
+</div>
+</div>
 </div>
 
 
