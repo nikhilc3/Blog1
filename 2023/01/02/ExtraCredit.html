@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      7 min read
     
 </span></p>
 
@@ -159,6 +159,9 @@ window.onload = wrap_img;
 
 <span class="c1"># Generate and print the random password</span>
 <span class="n">rand_pass</span> <span class="o">=</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">chars</span><span class="p">,</span> <span class="n">length</span><span class="p">))</span>
+<span class="c1">#The random.sample() function is used to randomly select a specified number of characters (length) from the chars string. </span>
+<span class="c1">#The resulting list of characters is then passed to the join() method of the empty string (''),</span>
+<span class="c1"># which concatenates the characters into a single string. The resulting string is stored in the rand_pass variable.</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Your randomly generated password is: '</span><span class="p">,</span> <span class="n">rand_pass</span><span class="p">)</span>
 
 <span class="c1"># Checks how easily guessed the password is</span>
