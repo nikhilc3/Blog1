@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      5 min read
     
 </span></p>
 
@@ -247,6 +247,20 @@ Representation to Re-Create the object:
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This code defines a class User that represents a user of some system.</p>
+<p>The init method is the constructor for the class and is called when an object of the class is created. It takes in several arguments, such as name, uid, password, dob (date of birth), and classOf and assigns them to instance variables with the self prefix. These instance variables are associated with the object and can be accessed and modified through the object's methods.</p>
+<p>The class also has several properties, which are methods decorated with @property. These properties allow for read-only access to the instance variables without allowing direct modification. For example, the name property returns the value of self._name, but does not allow the user to directly change the value of self._name. To change the value, the class also has setter methods, which are decorated with @name.setter.</p>
+<p>The class also has methods such as is_uid, set_password, and is_password that perform specific tasks such as checking if a given uid matches the object's uid, setting a hashed password for the object, and checking if a given password matches the object's hashed password.</p>
+<p>The str method is a special method that is called when the object is passed to the print() function or when the str() function is called on the object. It returns a JSON ready string representation of the object.</p>
+<p>The repr method is another special method that is called when the repr() function is called on the object. It returns a string that can be used to re-create the object.</p>
+<p>Finally, the code has a few print statements that demonstrate how to use these methods. For example, print("JSON ready string:\n", u1, "\n") prints the JSON ready string representation of the object u1.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -258,13 +272,11 @@ Representation to Re-Create the object:
 
 <span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
-        <span class="c1"># Setting instance attributes</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_make</span> <span class="o">=</span> <span class="n">make</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_model</span> <span class="o">=</span> <span class="n">model</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_price</span> <span class="o">=</span> <span class="n">price</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_year</span> <span class="o">=</span> <span class="n">year</span>
 
-    <span class="c1"># Properties for accessing the make, model, price, and year attributes</span>
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">make</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make</span>
@@ -297,12 +309,10 @@ Representation to Re-Create the object:
     <span class="k">def</span> <span class="nf">year</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">year</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_year</span> <span class="o">=</span> <span class="n">year</span>
 
-    <span class="c1"># Method for calculating the car's depreciation</span>
     <span class="k">def</span> <span class="nf">calculate_depreciation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">years</span><span class="p">):</span>
         <span class="n">depreciation</span> <span class="o">=</span> <span class="mf">0.9</span><span class="o">**</span><span class="n">years</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_price</span>
         <span class="k">return</span> <span class="n">depreciation</span>
 
-    <span class="c1"># Property for returning the car's attributes in a dictionary format</span>
     <span class="nd">@property</span>
     <span class="k">def</span> <span class="nf">dictionary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">car_dict</span> <span class="o">=</span> <span class="p">{</span>
@@ -313,11 +323,9 @@ Representation to Re-Create the object:
         <span class="p">}</span>
         <span class="k">return</span> <span class="n">car_dict</span>
 
-    <span class="c1"># Method for returning the car's attributes as a JSON string</span>
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="p">)</span>
 
-<span class="c1"># Testing the Car class</span>
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
     <span class="n">car1</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">make</span><span class="o">=</span><span class="s2">"Tesla"</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s2">"Model X"</span><span class="p">,</span> <span class="n">price</span><span class="o">=</span><span class="s2">"$110,000"</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="s2">"2016"</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">car1</span><span class="p">)</span>
@@ -344,6 +352,20 @@ Representation to Re-Create the object:
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This code defines a class called Car that represents a car object.</p>
+<p>The init method is the constructor for the class and is called when an object of the class is created. It takes in four arguments, such as make, model, price, and year and assigns them to instance variables with the self prefix. These instance variables are associated with the object and can be accessed and modified through the object's methods.</p>
+<p>The class also has several properties, which are methods decorated with @property. These properties allow for read-only access to the instance variables without allowing direct modification. For example, the make property returns the value of self._make, but does not allow the user to directly change the value of self._make. To change the value, the class also has setter methods, which are decorated with @make.setter.</p>
+<p>The class also has a method called calculate_depreciation, which takes in a single argument years and calculates the depreciation of the car based on that many years using the formula: 0.9^years * self._price</p>
+<p>The class also has a property called dictionary that returns a dictionary representation of the car's attributes, make, model, price, and year.</p>
+<p>The str method is a special method that is called when the object is passed to the print() function or when the str() function is called on the object. It uses the json.dumps() function to return a JSON string representation of the object.</p>
+<p>Finally, the code has a simple test that creates a Car object, car1, and prints it, to see the object in the form of json string.</p>
+
+</div>
+</div>
+</div>
 </div>
 
 
